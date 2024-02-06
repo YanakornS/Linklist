@@ -1,0 +1,79 @@
+#toolbar {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #eee;
+  
+  
+
+  
+}
+/* เพิ่มเอฟเฟกต์สมมาตรเมื่อมีการคลิกปุ่ม */
+button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.carriage {
+  display: inline-block; /* แสดงโบกี้ในแนวนอน */
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  cursor: move;
+   background-image: url('PNG/graffiti.png');
+    background-size: cover; /* ปรับขนาดรูปภาพให้เต็มพื้นที่ */
+    width: 25px ;
+    height: 25px;
+
+}
+
+.carriage:first-child{
+     background-image: url('PNG/train2.png');
+      background-size: cover;
+    width: 33px ; /* ปรับขนาดรูปภาพให้เต็มพื้นที่ */
+    height: 33px;
+   
+}
+.carriage:last-child{
+     background-image: url('PNG/train.png');
+     background-size: cover; /* ปรับขนาดรูปภาพให้เต็มพื้นที่ */
+    width: 33px;
+    height: 33px;
+}
+/* เพิ่ม CSS class สำหรับการขยายภาพ */
+.carriage:hover {
+    transform: scale(2.2); /* ขยายภาพขึ้น 20% เมื่อชี้เม้าส์ */
+}
+
+#train {
+  margin: 30px;
+  padding: 60px;
+  border: 1px solid #000;
+  min-height: 100px;
+  white-space: nowrap; /* ให้โบกี้ไม่ขึ้นบรรทัดใหม่ */
+  overflow-x: auto; /* เพิ่ม scrollbar แนวนอนถ้าจำเป็น */
+}
+.img {
+    margin: 80px;
+    padding: 30px;
+   
+}
+
